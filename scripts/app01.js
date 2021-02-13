@@ -1,12 +1,4 @@
-// Código para ejercicio Nro 01
+// Ejercicio 1
+let saludo = (nombre, apellido, edad) => `Hola mi nombre es ${nombre} ${apellido} y tengo ${edad} años.`;
 
-var numero01= parseInt(prompt('Ingrese primer número'));
-var numero02= parseInt(prompt('Ingrese segundo número'));
-
-console.log(`La suma es: ${suma2(numero01, numero02)}`);
-
-//Función Suma de 2 números
-function suma2(num1, num2) {
-    sumaFinal = num1 + num2;
-    return sumaFinal;
-}
+console.log(saludo('Luis', 'Rodríguez', 30));

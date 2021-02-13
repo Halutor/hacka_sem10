@@ -31,10 +31,9 @@
 
             <section class="main__portada">
 
-                <h1 class="main__content">Código en JS del reto 02 </h1>
+                <h1 class="main__content">Hackaton Semana 10 - JavaScripts </h1>
                 <h1 class="main__content">(Dar Click en cada Pregunta)</h1>
-                <p class="main__content">a continuación mediante sencillos algoritmos se mostrará la solución del reto
-                    02.
+                <p class="main__content">A continuación se muestra la solución de cada pregunta, no olvides clickear.
                 </p>
 
             </section>
@@ -46,42 +45,26 @@
             <ol class="section__containerItems">
 
                 <li class="section__item">
-                    <p class="section__title"><a href="./question01.html" target="_blank"> Implementar un algoritmo que
-                            reciba 2 argumentos y los sume,
-                            el resultado
-                            se
-                            deberá imprimir en pantalla</a></p>
+                    <p class="section__title"><a href="./question01.html" target="_blank"> Utilizando función arrow,
+                            crear una función que reciba como parámetros un nombre, apellido y edad y los retorne en un
+                            string concatenado “Hola mi nombre es sebastián yabiku y mi edad 33”</a></p>
                     <p class="section__parrafo">
-                        var numero01= parseInt(prompt('Ingrese primer número')); <br>
-                        var numero02= parseInt(prompt('Ingrese segundo número'));<br>
+                        // Código para ejercicio Nro 01 <br>
+                        let saludo = (nombre, apellido, edad) => `Hola mi nombre es ${nombre} ${apellido} y tengo
+                        ${edad} años.`; <br>
 
-                        console.log(`La suma es: ${suma2(numero01, numero02)}`);<br>
-
-                        //Función Suma de 2 números<br>
-                        function suma2(num1, num2) {<br>
-                        sumaFinal = num1 + num2;<br>
-                        return sumaFinal;<br>
-                        }
+                        console.log(saludo('Luis', 'Rodríguez', 30)); <br>
 
                     </p>
                 </li>
                 <li class="section__item">
-                    <p class="section__title"><a href="./question02.html" target="_blank">Un estudiante realiza 4
-                            exámenes, calcular el promedio de estos</a></p>
+                    <p class="section__title"><a href="./question02.html" target="_blank">Cree una función que tome
+                            números y devuelva la suma de sus cubos.</a></p>
                     <p class="section__parrafo">
                         // Código para ejercicio Nro 02 <br>
-                        var numero01= parseInt(prompt('Ingrese primera nota')); <br>
-                        var numero02= parseInt(prompt('Ingrese segunda nota')); <br>
-                        var numero03= parseInt(prompt('Ingrese tercera nota')); <br>
-                        var numero04= parseInt(prompt('Ingrese cuarta nota')); <br>
+                        let sumCubos = (num1, num2, num3) => `La suma es: ${num1**3}+${num2**3}+${num3**3}=${num1**3+num2**3+num3**3}`; <br>
 
-                        console.log(`El promedio es: ${promedio4(numero01, numero02, numero03, numero04)}`); <br>
-
-                        //Promedio <br>
-                        function promedio4(num1, num2, num3, num4) { <br>
-                        promFinal = (num1 + num2 + num3 + num4) / 4; <br>
-                        return promFinal; <br>
-                        } <br>
+                        console.log(sumCubos(1, 5, 9)); <br>
                     </p>
                 </li>
                 <li class="section__item">
