@@ -158,65 +158,45 @@
                             cada uno.</a></p>
                     <p class="section__parrafo">
                         // Código para ejercicio Nro 08 <br>
-                        
+                        const buscaMax = [[4, 2, 7, 1], [20, 70, 40, 90], [1, 2, 0]]; <br>
+                        const maximo = []; <br>
+                        let mayor = 0; <br>
+
+                        for (i = 0; i < buscaMax.length; i++) { <br>
+                            mayor=0; <br>
+                            for (j = 0; j < buscaMax[i].length; j++) { <br>
+                                if (buscaMax[i][j] > mayor) { <br>
+                                mayor = buscaMax[i][j]; <br>
+                                } <br>
+                                }
+                                maximo.push(mayor;) <br>
+                                } <br>
+
+                                console.log(maximo); <br>
+
                     </p>
                 </li>
                 <li class="section__item">
-                    <p class="section__title"> <a href="./question09.html" target="_blank">Una empresa que contrata
-                            personal requiere determinar la edad de las
-                            personas que solicitan trabajo, pero cuando se les realiza la entrevista sólo se
-                            les pregunta el año en que nacieron</a></p>
+                    <p class="section__title"> <a href="./question09.html" target="_blank">Dada una palabra, escriba una
+                            función que devuelva el primer índice y el último índice de un carácter.</a></p>
                     <p class="section__parrafo">
                         // Código para ejercicio Nro 09 <br>
-                        var anoNac= parseInt(prompt('Introducir año de nacimiento')); <br>
-                        var anoActual=2021; <br>
+                        let cadena01 ='Bienvenido al mundo de JS'; <br>
+                        let cadenaBusca='o'; <br>
 
-                        console.log(`Tienes: ${obtieneEdad(anoNac, anoActual)} años`); <br>
+                        let buscaChar = (cad01, busca) => cad01.indexof(busca); <br>
 
-                        //Obtiene edad <br>
-                        function obtieneEdad(num1, num2) { <br>
-                        edad = num2 - num1; <br>
-                        return edad; <br>
-                        } <br>
+                        console.log(buscaChar(cadena01, cadenaBusca)); <br>
+
                     </p>
                 </li>
                 <li class="section__item">
-                    <p class="section__title"><a href="./question10.html" target="_blank">Se tiene el nombre y la edad
-                            de tres personas. Se desea saber el nombre y
-                            la
-                            edad de la persona de menor edad</a></p>
+                    <p class="section__title"><a href="./question10.html" target="_blank">Escriba una función que
+                            convierta un objeto en una matriz, donde cada elemento representa un par clave-valor.</a>
+                    </p>
                     <p class="section__parrafo">
                         // Código para ejercicio Nro 10 <br>
-                        var nombre1= prompt('Ingrese nombre'); <br>
-                        var edad01= parseInt(prompt('Introducir edad')); <br>
-
-                        var nombre2= prompt('Ingrese nombre'); <br>
-                        var edad02= parseInt(prompt('Introducir edad')); <br>
-
-                        var nombre3= prompt('Ingrese nombre'); <br>
-                        var edad03= parseInt(prompt('Introducir edad')); <br>
-
-
-                        console.log(`Nombre: ${nombre1} ${edad01} años`); <br>
-                        console.log(`Nombre: ${nombre2} ${edad02} años`); <br>
-                        console.log(`Nombre: ${nombre3} ${edad03} años`); <br>
-
-
-                        obtieneMenor(edad01, edad02, edad03); <br>
-
-                        //Obtiene Menor <br>
-                        function obtieneMenor(num1, num2, num3) { <br>
-                        menor = num1; <br>
-                        nombre = nombre1; <br>
-
-                        if (num2 < menor) { menor=num2;<br>
-                            nombre=nombre2;<br>
-                            }<br>
-                            if (num3 < menor) {<br>
-                                menor=num3; <br>
-                                nombre=nombre3; <br>
-                                } <br>
-                                return console.log(`Nombre del menor: ${nombre} ${menor} años`); ; } </p>
+                         </p>
                 </li>
                 <li class="section__item">
                     <p class="section__title"><a href="./question11.html" target="_blank">Se les dará un bono por
